@@ -1,0 +1,17 @@
+Name                                Stmts   Miss  Cover   Missing
+-----------------------------------------------------------------
+monaco_racing/__init__.py               0      0   100%
+monaco_racing/api/__init__.py           0      0   100%
+monaco_racing/api/api_views.py         16      0   100%
+monaco_racing/api/mixins.py            22      0   100%
+monaco_racing/api/utils.py             31      4    87%   42, 53-55
+monaco_racing/app.py                   34      2    94%   37, 47
+monaco_racing/db/__init__.py            0      0   100%
+monaco_racing/db/initialize_db.py       6      3    50%   6-8
+monaco_racing/db/models.py             15      0   100%
+monaco_racing/db/parser.py             20     12    40%   28-44, 65-70
+monaco_racing/error_handlers.py         9      0   100%
+tests/__init__.py                       0      0   100%
+tests/test_app.py                      95      0   100%
+-----------------------------------------------------------------
+TOTAL                                 248     21    92%

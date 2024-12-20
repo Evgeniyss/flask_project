@@ -1,0 +1,34 @@
+swagger: '2.0'
+info:
+  title: 'Report API'
+  description: 'API for retrieving common statistics'
+  version: '1.0.0'
+paths:
+  /report:
+    get:
+      summary: 'Get common statistics'
+      parameters:
+        - name: order
+          in: query
+          type: string
+          description: 'Sorting order (asc/desc)'
+        - name: format
+          in: query
+          type: string
+          description: 'Response format (json/xml)'
+      responses:
+        200:
+          description: 'Successful response'
+          schema:
+            type: object
+            properties:
+              response:
+                type: object
+        400:
+          description: 'Bad Request'
+          schema:
+            type: object
+            properties:
+              error:
+                type: string
+

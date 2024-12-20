@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Report{% endblock title %}</title>
+</head>
+<body>
+{% block content %}
+    <h1>Monaco 2018 racing statistics</h1>
+	{% for row in report_result %}
+		<p>{{ row }}</p>
+	{% endfor %}
+{% endblock content %}
+</body>
+</html>
